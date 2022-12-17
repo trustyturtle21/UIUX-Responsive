@@ -1,36 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Responsive Redesign</title>
-    <!-- import javascript variables and functions -->
-    <script src="app.js" defer></script>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- page content goes into <body> -->
   <body>
-    <div id="projects">
-      <h1>Responsive Redesign(currently in progess)</h1>
+    <div class="container d-flex text-center flex-column align-items-center">
+      <h1 class="display-1">Responsive Redesign (currently in progress)</h1>
 
-      <h2>Project Overview</h2>
+      <h1>Context</h1>
+
       <p>
-        The goal of this assignment is for you to practice the workflow of
-        redesigning a simple website. You should take away the skills necessary
-        to analyze and identify flaws in an existing interface, create
-        low-fidelity and high-fidelity prototypes for various screen sizes, and
-        build a responsive website based on those prototypes.
+        The goal of this assignment is to practice the workflow of redesigning a
+        simple website: to analyze and identify flaws in an existing interface,
+        create low-fidelity and high-fidelity prototypes for various screen
+        sizes, and build a responsive website based on those prototypes.
       </p>
-      <!-- PART 1-->
-      <h2>Old Website</h2>
-      <a href="https://rikungfuclub.org/index.html">Old</a>
 
-      <h2>New and Redesigned Website</h2>
-      <a href="https://trustyturtle21.github.io/Responsive-Redesign/">New</a>
+      <h3>Old Website</h3>
+
+      <a href="https://rikungfuclub.org/index.html">
+        <img src="old-pc.png" class="img-fluid" alt="Responsive image"
+      /></a>
+
+      <h3>New and Redesigned Website</h3>
+
+      <a href="https://trustyturtle21.github.io/Responsive-Redesign/">
+        <img src="new-pc.png" class="img-fluid" alt="Responsive image"
+      /></a>
+
+      <h2>Why I chose this website</h2>
+
+      <p>
+        I chose this website because it looks really outdated and although it is
+        usable, in terms of design choices and accessibility, I would change
+        many things including making better use of the white space, font size
+        and color, and generally updating the website and visual flow to make it
+        more intuitive for various screen sizes. Additionally, I chose this
+        website because I am also a part of the Rhode Island Kung Fu Club :)
+      </p>
+
+      <h2>Usability Problems</h2>
+
+      <h4>Learnability</h4>
+      <p>
+        The learnability is mediocre as if a new user were to book a
+        performance, one would have to click on the contact information page and
+        then use the contact information provided on that page. It may not be
+        intuitive since one would expect it on the home page screen where it is
+        more easily accessible.
+      </p>
+
+      <h4>Memorability</h4>
+      <p>
+        It would not be memorable for the casual user since on certain pages,
+        the headings are not clear and sometimes non-existent. It would be
+        difficult to remember where the essential information lies on each page.
+        Again, there is nothing prompting the user to book a performance.
+      </p>
+
+      <h4>Efficiency</h4>
+      <p>
+        It has poor efficiency due to each page being super short with
+        information and mostly cluttered with images. Users will have to
+        frequently make use of the side navigation bar. Furthermore the side
+        navigation bar is not fixed during scrolling so users will have to
+        scroll all the way back up to navigate to other pages.
+      </p>
+
+      <h4>Accessibility</h4>
+      <p>
+        Using the WebAIM WAVE, I found that there were 2 contrast errors, 11
+        alerts, 8 features, and 2 structural elements. I agree with the contrast
+        error as it has to do with a banner blending into the background, alerts
+        and features dealing with alternative text as the alternative text for
+        the images are all unhelpful and listed as “picture”, and lastly I agree
+        with the structural errors that involve missing a hierarchy of headings.
+      </p>
+
+      <h3>Low-Fidelity PC View</h3>
+
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <img src="pc-1.jpg" height="300" />
+        <img src="pc-2.jpg" height="300" />
+        <img src="pc-3.jpg" height="300" />
+        <img src="pc-4.jpg" height="300" />
+      </div>
+
+      <h3>Low-Fidelity Tablet View</h3>
+
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <img src="tablet-1.jpg" height="300" />
+        <img src="tablet-2.jpg" height="300" />
+        <img src="tablet-3.jpg" height="300" />
+        <img src="tablet-4.jpg" height="300" />
+        <img src="tablet-5.jpg" height="300" />
+      </div>
+
+      <h3>Low-Fidelity Phone View</h3>
+
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <img src="phone-1.jpg" height="300" />
+        <img src="phone-2.jpg" height="300" />
+        <img src="phone-3.jpg" height="300" />
+        <img src="phone-4.jpg" height="300" />
+      </div>
+
+      <h3>Style Guide</h3>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <img src="style-guide.png" height="500" />
+      </div>
+
+      <h3>High-Fidelity Phone View</h3>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <img src="phone-hi.jpeg" height="1000" />
+      </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
